@@ -1,0 +1,219 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    footer {
+        position: relative;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    * {
+        font-size: 10px;
+    }
+
+    :root {
+        --mobile-width: 80%;
+    }
+
+    @font-face {
+        font-family: 'Libre Franklin';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/librefranklin/v14/jizDREVItHgc8qDIbSTKq4XkRiUf2zc.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+    .ping-soon__main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Libre Franklin';
+        padding-bottom: 2rem;
+        padding-top: 5rem;
+    }
+
+    .ping-soon__cont {
+        width: 584px;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ping-soon__h1 {
+        font-size: 4.2rem;
+        font-weight: 300;
+        color: hsl(0, 0%, 59%);
+        margin-bottom: 0;
+        margin-top: 4.6rem;
+    }
+
+    .ping-soon__h1--span {
+        color: hsl(209, 33%, 12%);
+        font-weight: 700;
+    }
+
+    .ping-soon__p {
+        font-size: 2rem;
+        color: hsl(209, 33%, 12%);
+        padding-bottom: 2rem;
+    }
+
+    .ping-soon__email-wrap {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1.2rem;
+    }
+
+    .ping-soon__error {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ping-soon__error-p {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        color: hsl(354, 100%, 66%);
+        visibility: hidden;
+    }
+
+    .ping-soon__email {
+        padding-block: 1.8rem;
+        flex-basis: 63%;
+        border-radius: 30px;
+        border: solid rgba(205, 211, 227, 1.0) 1px;
+        padding-left: 2.2rem;
+        font-size: 1.5rem;
+    }
+
+    .ping-soon__email::placeholder {
+        color: rgba(205, 211, 227, 1.0);
+    }
+
+    .ping-soon__submit {
+        font-family: 'Libre Franklin';
+        border-radius: 30px;
+        flex-grow: 1;
+        background-color: hsl(223, 87%, 63%);
+        border: none;
+        color: #fff;
+        padding-inline: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .ping-soon__submit:active {
+        background-color: hsl(223, 96%, 73%);
+    }
+
+    .ping-soon__img-cont {
+        width: 100%;
+        display: flex;
+        margin-top: 8rem;
+    }
+
+    .ping-soon__big-img {
+        width: 100%;
+    }
+
+    .ping-soon__social-cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+        gap: 2.6rem;
+    }
+
+    .fa {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: hsl(223, 87%, 63%);
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid hsla(0, 0%, 59%, 0.3) 1px;
+        border-radius: 50%;
+        transition: all 100ms ease-out;
+    }
+
+    .fa:hover {
+        background-color: hsl(223, 87%, 63%);
+        color: #fff;
+        transform: scale(1.1);
+        transition: all 100ms ease-out;
+    }
+
+    .ping-soon__copy {
+        color: hsla(0, 0%, 59%, 0.8);
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 583px) {
+        .ping-soon__email-wrap {
+            flex-direction: column;
+            width: var(--mobile-width);
+        }
+
+        .ping-soon__submit {
+            padding-block: 1.8rem;
+        }
+
+        .ping-soon__main {
+            height: 100%;
+        }
+
+        .ping-soon__img-cont {
+            width: calc(var(--mobile-width) + 5%);
+        }
+
+        .ping-soon__error {
+            width: calc(var(--mobile-width) - 10%);
+        }
+    }
+
+    @media screen and (max-width: 490px) {
+        .ping-soon__h1 {
+            font-size: 3rem;
+        }
+
+        .ping-soon__logo {
+            transform: scale(.8);
+        }
+
+        .ping-soon__p {
+            font-size: 1.6rem;
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        .ping-soon__h1 {
+            font-size: 8vw;
+        }
+
+        .ping-soon__img-cont {
+            width: calc(var(--mobile-width) + 10%);
+        }
+
+        .ping-soon__email-wrap {
+            width: calc(var(--mobile-width) + 5%);
+        }
+
+        .ping-soon__error {
+            width: calc(var(--mobile-width) - 15%);
+        }
+    }
