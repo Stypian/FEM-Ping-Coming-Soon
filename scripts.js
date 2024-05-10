@@ -6,7 +6,7 @@ onload = function() {
         const form = document.querySelector(".ping-soon__email-wrap");
         const submit = document.querySelector(".ping-soon__submit");
         const error = document.querySelector(".ping-soon__error-p");
-        const valid = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,3})$/;
+        const valid = /^([a-zA-Z0-9\.\-\\_\]+)@([a-zA-Z0-9-]+).([a-z]{2,3})$/;
 
         submit.addEventListener("click", function(e) {
             e.preventDefault();
